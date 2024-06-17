@@ -1,4 +1,4 @@
-module github.com/mrjonze/goexpert/rate-limiter
+module github.com/LeoCastr0/rate_limiter_challenge_go_expert
 
 go 1.22.2
 

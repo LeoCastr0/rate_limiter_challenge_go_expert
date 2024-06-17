@@ -3,12 +3,13 @@ package pkg
 import (
 	"context"
 	"errors"
-	"github.com/go-redis/redis/v8"
-	"github.com/mrjonze/goexpert/rate-limiter/db"
-	"github.com/mrjonze/goexpert/rate-limiter/server/config"
 	"net/http"
 	"strconv"
 	"time"
+
+	"github.com/LeoCastr0/rate_limiter_challenge_go_expert/db"
+	"github.com/LeoCastr0/rate_limiter_challenge_go_expert/server/config"
+	"github.com/go-redis/redis/v8"
 )
 
 func RateLimitRequests(ctx context.Context, ip string, tokenName string) (string, int) {
